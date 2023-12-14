@@ -1,7 +1,7 @@
-echo "# BGRemover" >> README.md
+echo "# BackGroundRemover" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M master
-git remote add origin https://github.com/Misbahhassan08/BGRemover.git
+git remote add origin https://github.com/Misbahhassan08/BackGroundRemover.git
 git push -u origin master
