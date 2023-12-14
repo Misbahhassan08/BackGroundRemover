@@ -44,6 +44,10 @@ def message(data):
     
     pass
 
+@app.route("/", methods=["GET"])
+def on_get_default():
+    return jsonify({"Status":"OK"})
+
 
 @app.route("/remove", methods=["POST"])
 def remove():
