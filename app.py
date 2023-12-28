@@ -75,13 +75,16 @@ def remove():
     global image
     if 'file' not in request.files:
         return jsonify({'error': 'missing file'}), 400
-
+    
+    logUpdater("New Request On endpoint Hit")
     if request.files['file'].filename.rsplit('.', 1)[1].lower() not in ["jpg", "png", "jpeg"]:
+        logUpdater("Invalid Format, Return request with 400")
         return jsonify({'error': 'invalid file format'}), 400
 
     data = request.files['file'].read()
     
     if len(data) == 0:
+        logUpdater("New Request Data Empty,  Return request with 400")
         return jsonify({'error': 'empty image'}), 400
     
     base64_data = base64.b64encode(data).decode('utf-8')
@@ -92,13 +95,14 @@ def remove():
 
     print("SERVER: Data emitting ...")
     socketio.emit('response1',  _dict)
+    logUpdater("Send Image fromm API to local Server")
 
     while True:
         if image is not None:
             new_image = image
             break       
         pass
-
+    logUpdater("Found the Image from Local AI server")
     image = None
     print("SERVER: DATA FOUND")
     _dict["image"] = new_image
