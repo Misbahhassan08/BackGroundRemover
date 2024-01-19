@@ -14,7 +14,7 @@ import pymysql
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'vnkdjnfjknfl1232#'
 CORS(app)
-
+app.app_context().push()
 
 image = None
 
@@ -88,9 +88,6 @@ def progress_log():
 # ------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------ #
 
-@app.route("/")
-def init_page():
-     return jsonify({"Status" : "API Health 100%"})
 
 @app.route("/receivekey", methods=["POST"])
 def receive_key():
