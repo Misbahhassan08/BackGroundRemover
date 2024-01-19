@@ -88,6 +88,10 @@ def progress_log():
 # ------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------ #
 
+@app.route("/")
+def init_page():
+     return jsonify({"Status" : "API Health 100%"})
+
 @app.route("/receivekey", methods=["POST"])
 def receive_key():
     print('Receive key api called !!!')
