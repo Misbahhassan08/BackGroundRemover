@@ -1,0 +1,1018 @@
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+INFO:geventwebsocket.handler:192.168.100.18 - - [2024-01-08 17:17:40] "GET / HTTP/1.1" 200 156 0.000000
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+INFO:geventwebsocket.handler:192.168.100.18 - - [2024-01-08 17:54:32] "GET / HTTP/1.1" 200 156 0.004159
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+DEBUG:geventwebsocket.handler:Can only upgrade connection if using GET method.
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6550
+ * Running on http://192.168.100.13:6550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.100.13 - - [09/Jan/2024 15:11:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.13 - - [09/Jan/2024 15:11:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 15:11:45] "GET /socket.io/?transport=polling&EIO=4&t=1704795105.8196213 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+ERROR:app:Exception on /remove [POST]
+Traceback (most recent call last):
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'remove' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 15:12:29] "[35m[1mPOST /remove HTTP/1.1[0m" 500 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+ERROR:app:Exception on /remove [POST]
+Traceback (most recent call last):
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'remove' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 15:14:36] "[35m[1mPOST /remove HTTP/1.1[0m" 500 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+ERROR:app:Exception on /remove [POST]
+Traceback (most recent call last):
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'remove' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 15:15:32] "[35m[1mPOST /remove HTTP/1.1[0m" 500 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 15:16:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 15:16:33] "GET / HTTP/1.1" 200 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+ERROR:app:Exception on /remove [POST]
+Traceback (most recent call last):
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'remove' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 15:16:50] "[35m[1mPOST /remove HTTP/1.1[0m" 500 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+ERROR:app:Exception on /remove [POST]
+Traceback (most recent call last):
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'remove' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 15:18:29] "[35m[1mPOST /remove HTTP/1.1[0m" 500 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6550
+ * Running on http://192.168.100.13:6550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 15:22:47] "GET /socket.io/?transport=polling&EIO=4&t=1704795767.7961223 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 15:25:34] "GET /socket.io/?transport=websocket&EIO=4&sid=xPYQ2BiEMlPaSMWTAAAA&t=1704795767.826383 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 15:25:45] "GET /socket.io/?transport=polling&EIO=4&t=1704795945.935358 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 15:26:04] "GET /socket.io/?transport=websocket&EIO=4&sid=EHUKysg5Be04SIu3AAAC&t=1704795946.0479717 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 15:26:37] "GET /socket.io/?transport=polling&EIO=4&t=1704795998.3322701 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6550
+ * Running on http://192.168.100.13:6550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 15:46:36] "GET /socket.io/?transport=polling&EIO=4&t=1704797196.906136 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 15:49:51] "GET /socket.io/?transport=websocket&EIO=4&sid=a3DQmaGM76mJqY_-AAAA&t=1704797196.9373715 HTTP/1.1" 200 -
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:32:20] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:32:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:33:30] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:33:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6550
+ * Running on http://192.168.100.13:6550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:35:34] "GET /socket.io/?transport=polling&EIO=4&t=1704800135.3667088 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+ERROR:app:Exception on /receivekey [POST]
+Traceback (most recent call last):
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 889, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\EliteBook\anaconda3\envs\IP\lib\site-packages\flask\app.py", line 1161, in make_response
+    raise TypeError(
+TypeError: The view function for 'receive_key' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:35:40] "[35m[1mPOST /receivekey HTTP/1.1[0m" 500 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6550
+ * Running on http://192.168.100.13:6550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:36:40] "GET /socket.io/?transport=polling&EIO=4&t=1704800201.0478384 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:36:47] "POST /receivekey HTTP/1.1" 200 -
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6550
+ * Running on http://192.168.100.13:6550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 16:38:04] "GET /socket.io/?transport=polling&EIO=4&t=1704800285.4255326 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:09:05] "GET /socket.io/?transport=websocket&EIO=4&sid=1z7NJVPQAEsR4K1UAAAA&t=1704800285.4724224 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:12:25] "GET /socket.io/?transport=polling&EIO=4&t=1704802345.3584363 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:13:28] "GET /socket.io/?transport=websocket&EIO=4&sid=XGUtgvKOvcqJKsrnAAAC&t=1704802345.8293893 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:13:38] "GET /socket.io/?transport=polling&EIO=4&t=1704802418.3888032 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:14:43] "GET /socket.io/?transport=websocket&EIO=4&sid=mJNBDMnM68eqEBI7AAAE&t=1704802418.936817 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:14:53] "GET /socket.io/?transport=polling&EIO=4&t=1704802494.1402867 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:23:38] "GET /socket.io/?transport=websocket&EIO=4&sid=os-KF7Fe-xLfRvRqAAAG&t=1704802494.5136368 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:26:19] "GET /socket.io/?transport=polling&EIO=4&t=1704803179.5446672 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:41:54] "GET /socket.io/?transport=websocket&EIO=4&sid=VyP3vuX8XzqNtWteAAAI&t=1704803179.7542217 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:42:08] "GET /socket.io/?transport=polling&EIO=4&t=1704804128.7408574 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:Found the Image from Local AI server
+INFO:root:Found the Image from Local AI server
+INFO:root:Found the Image from Local AI server
+INFO:root:Found the Image from Local AI server
+INFO:root:Found the Image from Local AI server
+INFO:root:data received from client
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:42:32] "POST /receivekey HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:42:32] "POST /receivekey HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:42:32] "POST /receivekey HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:42:32] "POST /receivekey HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:42:32] "POST /receivekey HTTP/1.1" 200 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:Found the Image from Local AI server
+INFO:root:data received from client
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:43:37] "POST /receivekey HTTP/1.1" 200 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:data received from client
+INFO:root:Found the Image from Local AI server
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:47:55] "POST /receivekey HTTP/1.1" 200 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:Found the Image from Local AI server
+INFO:root:data received from client
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:48:59] "POST /receivekey HTTP/1.1" 200 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:49:43] "GET /socket.io/?transport=websocket&EIO=4&sid=jYkqjdeLifgjQzYeAAAK&t=1704804129.5795233 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:49:53] "GET /socket.io/?transport=polling&EIO=4&t=1704804593.801229 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:data received from client
+INFO:root:Found the Image from Local AI server
+INFO:root:Found the Image from Local AI server
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:50:18] "POST /receivekey HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 17:50:18] "POST /receivekey HTTP/1.1" 200 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:58:02] "GET /socket.io/?transport=websocket&EIO=4&sid=zpcAcfh9sLbAmyHEAAAM&t=1704804594.2645853 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.100.18 - - [09/Jan/2024 17:58:14] "GET /socket.io/?transport=polling&EIO=4&t=1704805095.283231 HTTP/1.1" 200 -
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:root:data received from client
+INFO:root:Found the Image from Local AI server
+INFO:werkzeug:192.168.100.22 - - [09/Jan/2024 18:01:16] "POST /receivekey HTTP/1.1" 200 -
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+INFO:geventwebsocket.handler:192.168.100.18 - - [2024-01-09 19:07:35] "GET /socket.io/?transport=polling&EIO=4&t=1704809255.5100176 HTTP/1.1" 200 254 0.015623
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+DEBUG:geventwebsocket.handler:Attempting to upgrade connection
+DEBUG:geventwebsocket.handler:WebSocket request accepted, switching protocols
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+DEBUG:geventwebsocket.handler:Can only upgrade connection if using GET method.
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+INFO:geventwebsocket.handler:192.168.100.18 - - [2024-01-09 19:41:07] "GET /socket.io/?transport=polling&EIO=4&t=1704811267.9095244 HTTP/1.1" 200 254 0.000000
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+DEBUG:geventwebsocket.handler:Attempting to upgrade connection
+DEBUG:geventwebsocket.handler:WebSocket request accepted, switching protocols
+INFO:root:CLIENT CONNECTED
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+INFO:root:pong, recived pong from local ai server
+DEBUG:geventwebsocket.handler:Initializing WebSocket
+DEBUG:geventwebsocket.handler:Validating WebSocket request
+DEBUG:geventwebsocket.handler:Can only upgrade connection if using GET method.
+INFO:root:New Request On endpoint Hit
+INFO:root:Send Image fromm API to local Server
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6550
+ * Running on http://192.168.100.18:6550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-061-247
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6550
+ * Running on http://192.168.100.18:6550
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 101-061-247

@@ -9,12 +9,12 @@ import io
 import base64
 from config import *
 import logging
+import pymysql
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'vnkdjnfjknfl1232#'
 CORS(app)
-app.app_context().push()
-socketio = SocketIO(app, cross_origin='*')
+
 
 image = None
 
@@ -22,41 +22,55 @@ LOG_FILE = 'app.log'
 log = logging.getLogger('__name__')
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG)
 
+class MyDataBase:
+    def __init__(self):
+        self.connection = pymysql.connect(host='74.50.90.186',
+                      user='technove_misbah',
+                      password='i3kMKJ&T29Np',
+                      db='technove_demo',
+                      charset='utf8mb4',
+                      cursorclass=pymysql.cursors.DictCursor)
+        pass # End of MyDataBase class
+
+    def insertToDB(self, query, values, table_name):
+        self.cursor = self.connection.cursor()
+        self.cursor.execute(query, values)
+        self.cursor.connection.commit()
+        self.cursor.execute(f""" SELECT * from {table_name}""")
+        output = self.cursor.fetchall()
+        data = None
+        for i in output:
+            data = i
+        self.cursor.close() # Closing the cursor
+        return data # end of insertToDB function
+    
+    def fetchData(self,query):
+        self.cursor = self.connection.cursor()
+        self.cursor.execute(query)
+        self.cursor.connection.commit()
+        output = self.cursor.fetchall()
+        self.cursor.close() #Closing the cursor
+        return output # end of fetchTableData function
+    
+    def deleteData(self,query):
+        self.cursor = self.connection.cursor()
+        self.cursor.execute(query)
+        self.cursor.connection.commit()
+        self.cursor.close() #Closing the cursor
+        pass
+
 def logUpdater(mesg):
         logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
         logging.info('{}'.format(mesg))
         pass
-
-@socketio.on('connect')
-def on_connect():
-    global image
-    image = None 
-    print('Server received connection')
-    logUpdater("CLIENT CONNECTED")
-    socketio.send("client connect")
-
-@socketio.on('pong')  
-def on_pong(msg):
-    print("received pong"+msg) 
-    logUpdater("pong, recived pong from local ai server")
-    socketio.emit('ping',"ping from server ")
-    pass 
-
 
 def print_custom_message(msg):
     if is_console:
         print(f"SERVER:{msg}")
     pass
 
-@socketio.on('message')
-def message(data):
-    global image
-    image = data
-    print("data received from client")  # show msg from client
-    logUpdater("data received from client")
-    #emit('response', {'from': 'server'})
-    
-    pass
+
+
 
 @app.route("/", methods=["GET"])
 def on_get_default():
@@ -70,44 +84,62 @@ def progress_log():
 			
 	return Response(generate(), mimetype= 'text/event-stream')
 
+# -------------------------------- Receive Key API ------------------------#
+# ------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------ #
+
+@app.route("/receivekey", methods=["POST"])
+def receive_key():
+    print('Receive key api called !!!')
+    global image
+    db = MyDataBase()
+    tableName = "bg_tbl"
+    if request.method == "POST":
+
+        # Extract data to from json
+        jsonData = request.get_json()
+        random_key_string = jsonData["text"]
+
+        # Fetch data to from Database
+        query = f""" SELECT * from {tableName} WHERE KeyValue={random_key_string}"""
+        rowData = db.fetchData(query)
+        original_image = rowData["Image"] # Image in  base 64 string
+        bgImage = rowData["bg_image"] # Image in  base 64 string
+        key, Status = rowData["KeyValue"], rowData["Status"]
+        logUpdater("Found the Image from Local AI server")
+
+        # Delete data to from Database of current KeyValue of row
+        query = f"""DELETE FROM {tableName} WHERE KeyValue = {key}"""
+        db.deleteData(query)
+        return jsonify({"image": bgImage})
+
+
+# -------------------------------- Remove API -----------------------------#
+# ------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------ #
+
 @app.route("/remove", methods=["POST"])
 def remove():
-    global image
-    if 'file' not in request.files:
-        return jsonify({'error': 'missing file'}), 400
-    
-    logUpdater("New Request On endpoint Hit")
-    if request.files['file'].filename.rsplit('.', 1)[1].lower() not in ["jpg", "png", "jpeg"]:
-        logUpdater("Invalid Format, Return request with 400")
-        return jsonify({'error': 'invalid file format'}), 400
+    print('Remove api called !!!')
+    db = MyDataBase()
+    tableName = "image_tbl"
+    Status = 0
+    if request.method == "POST":
 
-    data = request.files['file'].read()
-    
-    if len(data) == 0:
-        logUpdater("New Request Data Empty,  Return request with 400")
-        return jsonify({'error': 'empty image'}), 400
-    
-    base64_data = base64.b64encode(data).decode('utf-8')
-    _dict = {
-        "image":str(base64_data)
-    }
-    new_image = None
+        # Extract data to from json
+        jsonData = request.get_json()
+        base64_image_string, random_key_string = jsonData["file"], jsonData["text"]
 
-    print("SERVER: Data emitting ...")
-    socketio.emit('response1',  _dict)
-    logUpdater("Send Image fromm API to local Server")
-
-    while True:
-        if image is not None:
-            new_image = image
-            break       
-        pass
-    logUpdater("Found the Image from Local AI server")
-    image = None
-    print("SERVER: DATA FOUND")
-    _dict["image"] = new_image
-    return jsonify(_dict)
-
+        # Save data to database
+        query  =  (f"""INSERT INTO image_tbl (KeyValue, Image, Status)  VALUES (%s, %s, %d)""")
+        values = (random_key_string,base64_image_string,Status)
+        lastRow = db.insertToDB(query, values,tableName)
+        image_id = lastRow["IMAGEID"]
+        
+        # Save progress in log file
+        logUpdater(f"New Record with image ID : ({image_id}) Save in DataBase")
+    return jsonify({"Status":"OK"})
 
 if __name__ == '__main__':
-    socketio.run(app, host='0.0.0.0',port=port)
+    app.run(debug=True, host='0.0.0.0', port=port)
+
