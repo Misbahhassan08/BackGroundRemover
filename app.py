@@ -131,7 +131,7 @@ def remove():
         base64_image_string, random_key_string = jsonData["file"], jsonData["text"]
 
         # Save data to database
-        query  =  (f"""INSERT INTO image_tbl (KeyValue, Image, Status)  VALUES (%s, %s, %d)""")
+        query  =  (f"""INSERT INTO image_tbl (KeyValue, Image, Status)  VALUES (%s, %s, %s)""")
         values = (random_key_string,base64_image_string,Status)
         lastRow = db.insertToDB(query, values,tableName)
         image_id = lastRow["IMAGEID"]
