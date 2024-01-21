@@ -13,7 +13,7 @@ import pymysql
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'vnkdjnfjknfl1232#'
-CORS(app)
+CORS(app, supports_credentials=True)
 app.app_context().push()
 
 image = None
@@ -88,10 +88,15 @@ def progress_log():
 # ------------------------------------------------------------------------ #
 # ------------------------------------------------------------------------ #
 
-
 @app.route("/receivekey", methods=["POST"])
 def receive_key():
     print('Receive key api called !!!')
+
+    original_image = ''
+    bgImage = ''
+    key = ''
+    Status = ''
+
     global image
     db = MyDataBase()
     tableName = "bg_tbl"
@@ -102,17 +107,25 @@ def receive_key():
         random_key_string = jsonData["text"]
 
         # Fetch data to from Database
-        query = f""" SELECT * from {tableName} WHERE KeyValue={random_key_string}"""
-        rowData = db.fetchData(query)
-        original_image = rowData["Image"] # Image in  base 64 string
-        bgImage = rowData["bg_image"] # Image in  base 64 string
-        key, Status = rowData["KeyValue"], rowData["Status"]
-        logUpdater("Found the Image from Local AI server")
+        query = f""" SELECT * from {tableName} WHERE KeyValue = '{random_key_string}'"""
+        
+        data = db.fetchData(query)
+        
+        if data:
+            rowData = data[0]
+            original_image = rowData['Image'] # Image in  base 64 string
+            bgImage = rowData['bg_image'] # Image in  base 64 string
+            key, Status = rowData['KeyValue'], rowData['Status']
+            logUpdater("Found the Image from Local AI server")
+            print("Found the Image from Local AI server")
+        else:
+            logUpdater("No data found in the bg_tbl")
+            print("No data found in the bg_tbl")
 
         # Delete data to from Database of current KeyValue of row
-        query = f"""DELETE FROM {tableName} WHERE KeyValue = {key}"""
+        query = f"""DELETE FROM {tableName} WHERE KeyValue = '{key}'"""
         db.deleteData(query)
-        return jsonify({"image": bgImage})
+        return jsonify({"image": bgImage, "original_image" : original_image})
 
 
 # -------------------------------- Remove API -----------------------------#
