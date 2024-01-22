@@ -118,14 +118,18 @@ def receive_key():
             key, Status = rowData['KeyValue'], rowData['Status']
             logUpdater("Found the Image from Local AI server")
             print("Found the Image from Local AI server")
+            # Delete data to from Database of current KeyValue of row
+            query = f"""DELETE FROM {tableName} WHERE KeyValue = '{key}'"""
+            db.deleteData(query)
+            return jsonify({"image": bgImage, "original_image" : original_image})
         else:
             logUpdater("No data found in the bg_tbl")
             print("No data found in the bg_tbl")
+            return 400
+    else:
+        return 400
 
-        # Delete data to from Database of current KeyValue of row
-        query = f"""DELETE FROM {tableName} WHERE KeyValue = '{key}'"""
-        db.deleteData(query)
-        return jsonify({"image": bgImage, "original_image" : original_image})
+        
 
 
 # -------------------------------- Remove API -----------------------------#
